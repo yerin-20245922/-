@@ -12,14 +12,14 @@ const place = document.querySelector('#place');
 const random = document.querySelector('#random');
 
 var menuArray = new Array();
-menuArray[0] = "중식";
-menuArray[1] = "양식";
-menuArray[2] = "일식";
-menuArray[3] = "아시안";
-menuArray[4] = "분식";
-menuArray[5] = "한식";
-menuArray[6] = "패스트푸드";
-menuArray[7] = "카페";
+menuArray[0] = "커피";
+menuArray[1] = "디카페인";
+menuArray[2] = "콜드브루";
+menuArray[3] = "밀크(라떼)";
+menuArray[4] = "블렌디드(스무디)";
+menuArray[5] = "에이드";
+menuArray[6] = "티";
+menuArray[7] = "주스";
 
 toogleBtn.addEventListener('click', function () {
     menu.classList.toggle('active');
