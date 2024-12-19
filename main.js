@@ -13,10 +13,10 @@ const random = document.querySelector('#random');
 
 var menuArray = new Array();
 menuArray[0] = "커피";
-menuArray[1] = "디카페인";
+menuArray[1] = "몸 건강을 위해 디카페인";
 menuArray[2] = "콜드브루";
-menuArray[3] = "밀크(라떼)";
-menuArray[4] = "블렌디드(스무디)";
+menuArray[3] = "부드럽게 밀크(라떼)";
+menuArray[4] = "달달시원 블렌디드(스무디)";
 menuArray[5] = "에이드";
 menuArray[6] = "티";
 menuArray[7] = "주스";
