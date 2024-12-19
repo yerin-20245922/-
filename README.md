@@ -16,3 +16,4 @@
 - Sources
   - Icons: [Font Awesome](https://fontawesome.com/)
   - Header font: Jua from [Google Fonts](https://fonts.google.com/)
+  - Open Source: 
