@@ -1,7 +1,7 @@
 :root {
   --text-color: white;
   --background-color: #13235d;
-  --accent-color: #4bc4d;
+  --accent-color: #3a89cb;
 }
 
 body {
@@ -18,7 +18,7 @@ body {
 }
 
 .navbar__logo {
-  font-size: 24px;
+  font-size: 30px;
   color: var(--text-color);
 }
 
@@ -27,7 +27,7 @@ body {
 }
 
 .navbar__menu {
-  font-size: 20px;
+  font-size: 25px;
   text-decoration: none;
   color: var(--text-color);
   display: flex;
@@ -49,7 +49,7 @@ body {
   color: var(--text-color);
   display: flex;
   padding-left: 0;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .navbar__icons li {
@@ -87,15 +87,15 @@ table th {
   display: none;
 }
 
-.container__price {
+.review__writing{
   display: none;
 }
 
-.container__price.active {
+.review__writing.active {
   display: flex;
 }
 
-.container__price.active table {
+.review__writing.active table {
   font-size: 20px;
   margin: 20px 10%;
 }
@@ -126,7 +126,7 @@ table th {
   table-layout: fixed;
 }
 
-.container__place {
+/* .container__place {
   display: none;
 }
 
@@ -146,7 +146,7 @@ table th {
 .container__place.active table {
   font-size: 20px;
   margin: 20px 10%;
-}
+} */
 
 div {
   flex-direction: column;
@@ -187,4 +187,7 @@ div {
     display: flex;
     margin: 5px;
   }
+
+
+
 }
