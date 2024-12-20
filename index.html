@@ -15,16 +15,17 @@
     <nav class="navbar">
         <div class="navbar__logo">
             <i class="fas fa-concierge-bell"></i>
-            <a>어디야? 이디야</a>
+            <a>어디야? 이디야!</a>
         </div>
 
         <ul class="navbar__menu">
-            <li id="menu">메뉴</li>
-            <li id="random">!랜덤!</li>
+            <li id="menu"   style="cursor: pointer;">메뉴</li>
+            <li id="random" style="cursor: pointer;">!랜덤!</li>
+            <li id="review" style="cursor: pointer;">후기작성</li>
         </ul>
 
         <ul class="navbar__icons">
-            <a href="https://github.com/tula3and/rainbow-meal">
+            <a href="https://github.com/yerin-20245922/final-project_open-source-programming.git">GitHub
                 <li><i class="fab fa-github"></i></li>
             </a>
         </ul>
@@ -34,12 +35,9 @@
         </a>
     </nav>
 
-
     <div class="container__menu">
-                   
-
-        <details>
-            <summary>일식</summary>
+        <details>            
+            <summary>커피</summary>
             <table class="dataframe vertical">
                 <thead>
                     <tr style="text-align: right;">
@@ -50,71 +48,202 @@
                         <th>당</th>
                         <th>알러지</th>
                     </tr>
-                </thead>
+                </head>
                 <tbody>
                     <tr>
                         <th>21</th>
-                        <td>일식</td>
-                        <td>6500</td>
-                        <td><a href=https://map.naver.com/v5/entry/place/1235137669>잇토사이야</a></td>
-                        <td>북문</td>
+                        <td>메뉴</td>
+                        <td>가격</td>
+                        <td>칼로리</td>
                         <td>당</td>
+                        <td>알레르기 유발성분</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="dataframe vertical">
+                <thead>
+                    <tr style="text-align: right;">
+                        <th>메뉴</th>
+                        <th>가격</th>
+                        <th>칼로리</th>
+                        <th>당</th>
+                        <th>알러지</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>카페 아메리카노</td>
+                        <td>3,500원</td>
+                        <td>16.0Kcal</td>
+                        <td>0.0g</td>
+                        <td>고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
                     </tr>
                     <tr>
                         <th>16</th>
-                        <td>일식</td>
-                        <td>6900</td>
-                        <td><a href=https://map.naver.com/v5/entry/place/21817904>밥하는남자</a></td>
-                        <td>북문</td>
-                        <td>당</td>
+                        <td>시그니처 라떼</td>
+                        <td>4,700원</td>
+                        <td>376.0Kcal</td>
+                        <td>9.0g</td>
+                        <td>우유, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
                     </tr>
                     <tr>
                         <th>22</th>
-                        <td>일식</td>
-                        <td>9000</td>
-                        <td><a href=https://map.naver.com/v5/entry/place/1993215714>나이스샤워</a></td>
-                        <td>북문</td>
-                        <td>당</td>
+                        <td>민트 모히또 라떼</td>
+                        <td>4,900원</td>
+                        <td>446.0Kcal</td>
+                        <td>31.0g</td>
+                        <td>우유, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
                     </tr>
                     <tr>
                         <th>64</th>
-                        <td>일식</td>
-                        <td>9700</td>
-                        <td><a href=http://naver.me/xN9SMqTA>우연 희</a></td>
-                        <td>동문</td>
-                        <td>당</td>
+                        <td>아샷추(복숭아)</td>
+                        <td>3,400원</td>
+                        <td>173.0Kcal</td>
+                        <td>39.0g</td>
+                        <td>복숭아, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                    <tr>
+                        <th>64</th>
+                        <td>제로슈가 아샷추(복숭아)</td>
+                        <td>3,400원</td>
+                        <td>14.0Kcal</td>
+                        <td>0.0g</td>
+                        <td>복숭아, nbsp, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
                     </tr>
                     <tr>
                         <th>9</th>
-                        <td>일식</td>
-                        <td>12000</td>
-                        <td><a href=https://map.naver.com/v5/entry/place/1560634149>마사</a></td>
-                        <td>북문</td>
-                        <td>당</td>
+                        <td>달달커피</td>
+                        <td>2,900원</td>
+                        <td>277.0Kcal</td>
+                        <td>20.0g</td>
+                        <td>우유, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
                     </tr>
                     <tr>
                         <th>44</th>
-                        <td>일식</td>
-                        <td>12000</td>
-                        <td><a href=http://naver.me/FEt5qMdW>초밥집</a></td>
-                        <td>쪽문 + 기숙사쪽문 + 조은문 + 솔로문</td>
-                        <td>당</td>
+                        <td>넛넛츠 크림 라떼</td>
+                        <td>4,700원</td>
+                        <td>429.0Kcal</td>
+                        <td>51.0g</td>
+                        <td>우유, 대두, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
                     </tr>
                     <tr>
                         <th>59</th>
-                        <td>일식</td>
-                        <td>13000</td>
-                        <td><a href=http://naver.me/FwwRD5xE>정돈카츠</a></td>
-                        <td>동문</td>
-                        <td>당</td>
+                        <td>연유 카페라떼</td>
+                        <td>4,500원</td>
+                        <td>386.0Kcal</td>
+                        <td>49.0g</td>
+                        <td>우유, 대두, nbsp, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                    <tr>
+                        <th>59</th>
+                        <td>카페 라떼</td>
+                        <td>4,200원</td>
+                        <td>203.0Kcal</td>
+                        <td>15.0g</td>
+                        <td>우유, nbsp, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                    <tr>
+                        <th>44</th>
+                        <td>카라멜 마끼아또</td>
+                        <td>4,500원</td>
+                        <td>285.0Kcal</td>
+                        <td>36.0g</td>
+                        <td>우유, 대두, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                    <tr>
+                        <th>59</th>
+                        <td>바닐라 라떼</td>
+                        <td>4,500원</td>
+                        <td>303.0Kcal</td>
+                        <td>29.0g</td>
+                        <td>우유, 대두, nbsp, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                    <tr>
+                        <th>44</th>
+                        <td>카페 모카</td>
+                        <td>4,500원</td>
+                        <td>424.0Kcal</td>
+                        <td>38.0g</td>
+                        <td>우유, 대두, nbsp, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                    <tr>
+                        <th>44</th>
+                        <td>화이트 초콜릿 모카</td>
+                        <td>4,500원</td>
+                        <td>420.0Kcal</td>
+                        <td>40.0g</td>
+                        <td>우유, 대두, nbsp, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                    <tr>
+                        <th>44</th>
+                        <td>민트 모카</td>
+                        <td>4,900원</td>
+                        <td>484.0Kcal</td>
+                        <td>45.0g</td>
+                        <td>우유, 대두, nbsp, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                    <tr>
+                        <th>44</th>
+                        <td>에스프레소</td>
+                        <td>2,900원</td>
+                        <td>8.0Kcal</td>
+                        <td>0.0g</td>
+                        <td>고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                    <tr>
+                        <th>44</th>
+                        <td>에스프레소 마끼아또</td>
+                        <td>3,200원</td>
+                        <td>14.0Kcal</td>
+                        <td>1.0g</td>
+                        <td>우유, nbsp, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                    <tr>
+                        <th>44</th>
+                        <td>에스프레소 콘파냐</td>
+                        <td>3,200원</td>
+                        <td>47Kcal</td>
+                        <td>2.0g</td>
+                        <td>우유, 대두, nbsp, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                    <tr>
+                        <th>44</th>
+                        <td>카푸치노</td>
+                        <td>4,200원</td>
+                        <td>129.0Kcal</td>
+                        <td>9.0g</td>
+                        <td>우유, nbsp, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
                     </tr>
                 </tbody>
             </table>
         </details>
 
         <details>
-            <summary>분식</summary>
-            <table class="dataframe">
+            <summary>콜드브루</summary>
+            <table class="dataframe vertical">
+                <thead>
+                    <tr style="text-align: right;">
+                        <th></th>
+                        <th>메뉴</th>
+                        <th>가격</th>
+                        <th>칼로리</th>
+                        <th>당</th>
+                        <th>알러지</th>
+                    </tr>
+                </head>
+                <tbody>
+                    <tr>
+                        <th>21</th>
+                        <td>메뉴</td>
+                        <td>가격</td>
+                        <td>칼로리</td>
+                        <td>당</td>
+                        <td>알레르기 유발성분</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="dataframe vertical">
                 <thead>
                     <tr style="text-align: right;">
                         <th></th>
@@ -128,58 +257,88 @@
                 <tbody>
                     <tr>
                         <th>34</th>
-                        <td>분식</td>
-                        <td>2500</td>
-                        <td><a href=http://naver.me/5uOD7xiJ>자매분식</a></td>
-                        <td>서문</td>
-                        <td>당</td>
+                        <td>콜드브루</td>
+                        <td>3,900원</td>
+                        <td>12.0Kcal</td>
+                        <td>0.0g</td>
+                        <td>고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                    <tr>
+                        <th>34</th>
+                        <td>바닐라 오트 콜드브루</td>
+                        <td>5,200원</td>
+                        <td>206.0Kcal</td>
+                        <td>16.0g</td>
+                        <td>우유, 대두, nbsp, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
                     </tr>
                     <tr>
                         <th>67</th>
-                        <td>분식</td>
-                        <td>3000</td>
-                        <td><a href=http://naver.me/5Fk8Woia>조아라떡볶이&닭강정</a></td>
-                        <td>동문</td>
-                        <td>당</td>
+                        <td>연유 콜드브루</td>
+                        <td>4,700원</td>
+                        <td>282.0Kcal</td>
+                        <td>37.0g</td>
+                        <td>우유, 대두, nbsp, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
                     </tr>
                     <tr>
                         <th>1</th>
-                        <td>분식</td>
-                        <td>5500</td>
-                        <td><a href=https://map.naver.com/v5/entry/place/1694235929>대우오뎅</a></td>
-                        <td>북문</td>
-                        <td>당</td>
+                        <td>흑당 콜드브루</td>
+                        <td>4,200원</td>
+                        <td>239.0Kcal</td>
+                        <td>38.0g</td>
+                        <td>우유, 아황산류, nbsp, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
                     </tr>
                     <tr>
                         <th>20</th>
-                        <td>분식</td>
-                        <td>6000</td>
-                        <td><a href=https://map.naver.com/v5/entry/place/36220359>은화수식당</a></td>
-                        <td>북문</td>
-                        <td>당</td>
+                        <td>콜드브루 라떼</td>
+                        <td>4,500원</td>
+                        <td>134.0Kcal</td>
+                        <td>10.0g</td>
+                        <td>우유, nbsp, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
                     </tr>
                     <tr>
                         <th>66</th>
-                        <td>분식</td>
-                        <td>6000</td>
-                        <td><a href=http://naver.me/FqVjAbQu>지구인클럽 돈가스</a></td>
-                        <td>동문</td>
-                        <td>당</td>
+                        <td>콜드브루 화이트비엔나</td>
+                        <td>4,900원</td>
+                        <td>267.0Kcal</td>
+                        <td>32.0g</td>
+                        <td>우유, 대두, nbsp, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
                     </tr>
                     <tr>
                         <th>13</th>
-                        <td>분식</td>
-                        <td>9800</td>
-                        <td><a href=https://map.naver.com/v5/entry/place/33876221>도토리1</a></td>
-                        <td>북문</td>
-                        <td>당</td>
+                        <td>콜드브루 니트로</td>
+                        <td>4,200원</td>
+                        <td>14.0Kcal</td>
+                        <td>0.0g</td>
+                        <td>고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
                     </tr>
                 </tbody>
             </table>
         </details>
 
         <details>
-            <summary>중식</summary>
+            <summary>디카페인</summary>
+            <table class="dataframe vertical">
+                <thead>
+                    <tr style="text-align: right;">
+                        <th></th>
+                        <th>메뉴</th>
+                        <th>가격</th>
+                        <th>칼로리</th>
+                        <th>당</th>
+                        <th>알러지</th>
+                    </tr>
+                </head>
+                <tbody>
+                    <tr>
+                        <th>21</th>
+                        <td>메뉴</td>
+                        <td>가격</td>
+                        <td>칼로리</td>
+                        <td>당</td>
+                        <td>알레르기 유발성분</td>
+                    </tr>
+                </tbody>
+            </table>
             <table class="dataframe vertical">
                 <thead>
                     <tr style="text-align: right;">
@@ -193,60 +352,129 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <th>68</th>
-                        <td>중식</td>
-                        <td>4000</td>
-                        <td><a href=http://naver.me/FSK0TWvc>기황후</a></td>
-                        <td>동문</td>
-                        <td>당</td>
+                        <td>디카페인 카페 아메리카노</td>
+                        <td>3,700원</td>
+                        <td>11.0Kcal</td>
+                        <td>0.0g</td>
+                        <td>X</td>
                     </tr>
                     <tr>
-                        <th>47</th>
-                        <td>중식</td>
-                        <td>4500</td>
-                        <td><a href=http://naver.me/xGnNGBtp>북경반점</a></td>
-                        <td>쪽문 + 기숙사쪽문 + 조은문 + 솔로문</td>
-                        <td>당</td>
+                        <th>16</th>
+                        <td>디카페인 시그니처 라떼</td>
+                        <td>5,200원</td>
+                        <td>371.0Kcal</td>
+                        <td>9.0g</td>
+                        <td>우유</td>
                     </tr>
                     <tr>
-                        <th>25</th>
-                        <td>중식</td>
-                        <td>5000</td>
-                        <td><a href=https://map.naver.com/v5/entry/place/21451480>황금성</a></td>
-                        <td>텍문</td>
-                        <td>당</td>
+                        <th>64</th>
+                        <td>디카페인 아샷추(복숭아)</td>
+                        <td>3,400원</td>
+                        <td>170.0Kcal</td>
+                        <td>39.0g</td>
+                        <td>복숭아</td>
+                    </tr>                
+                    <tr>
+                        <th>59</th>
+                        <td>디카페인 카페 라떼</td>
+                        <td>4,700원</td>
+                        <td>136.0Kcal</td>
+                        <td>10.0g</td>
+                        <td>우유</td>
                     </tr>
                     <tr>
-                        <th>6</th>
-                        <td>중식</td>
-                        <td>5500</td>
-                        <td><a href=https://map.naver.com/v5/entry/place/19525616>면탐정</a></td>
-                        <td>북문</td>
-                        <td>당</td>
+                        <th>44</th>
+                        <td>디카페인 카라멜 마끼아또</td>
+                        <td>5,000원</td>
+                        <td>280.0Kcal</td>
+                        <td>36.0g</td>
+                        <td>우유, 대두</td>
                     </tr>
                     <tr>
-                        <th>46</th>
-                        <td>중식</td>
-                        <td>7900</td>
-                        <td><a href=http://naver.me/FBE7sj2T>짱마담</a></td>
-                        <td>쪽문 + 기숙사쪽문 + 조은문 + 솔로문</td>
-                        <td>당</td>
+                        <th>44</th>
+                        <td>디카페인 카페 모카</td>
+                        <td>5,000원</td>
+                        <td>348.0Kcal</td>
+                        <td>33.0g</td>
+                        <td>우유, 대두</td>
                     </tr>
                     <tr>
-                        <th>56</th>
-                        <td>중식</td>
-                        <td>9000</td>
-                        <td><a href=http://naver.me/5DhMYYsn>감래등</a></td>
-                        <td>쪽문 + 기숙사쪽문 + 조은문 + 솔로문</td>
-                        <td>당</td>
+                        <th>44</th>
+                        <td>디카페인 에스프레소</td>
+                        <td>3,400원</td>
+                        <td>5.0Kcal</td>
+                        <td>0.0g</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <th>44</th>
+                        <td>디카페인 카푸치노</td>
+                        <td>4,700원</td>
+                        <td>140.0Kcal</td>
+                        <td>10.0g</td>
+                        <td>우유</td>
+                    </tr>
+                    <tr>
+                        <th>34</th>
+                        <td>디카페인 콜드브루</td>
+                        <td>4,200원</td>
+                        <td>7.0Kcal</td>
+                        <td>0.0g</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <th>34</th>
+                        <td>디카페인 바닐라 오트 콜드브루</td>
+                        <td>5,500원</td>
+                        <td>205.0Kcal</td>
+                        <td>16.0g</td>
+                        <td>우유, 대두</td>
+                    </tr>
+                    <tr>
+                        <th>66</th>
+                        <td>디카페인 콜드브루 화이트비엔나</td>
+                        <td>5,200원</td>
+                        <td>265.0Kcal</td>
+                        <td>32.0g</td>
+                        <td>우유, 대두</td>
+                    </tr>
+                    <tr>
+                        <th>13</th>
+                        <td>디카페인 콜드브루 니트로</td>
+                        <td>4,500원</td>
+                        <td>9.0Kcal</td>
+                        <td>0.0g</td>
+                        <td>X</td>
                     </tr>
                 </tbody>
             </table>
         </details>
 
         <details>
-            <summary>카페</summary>
-            <table class="dataframe">
+            <summary>밀크</summary>
+            <table class="dataframe vertical">
+                <thead>
+                    <tr style="text-align: right;">
+                        <th></th>
+                        <th>메뉴</th>
+                        <th>가격</th>
+                        <th>칼로리</th>
+                        <th>당</th>
+                        <th>알러지</th>
+                    </tr>
+                </head>
+                <tbody>
+                    <tr>
+                        <th>21</th>
+                        <td>메뉴</td>
+                        <td>가격</td>
+                        <td>칼로리</td>
+                        <td>당</td>
+                        <td>알레르기 유발성분</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="dataframe vertical">
                 <thead>
                     <tr style="text-align: right;">
                         <th></th>
@@ -260,83 +488,277 @@
                 <tbody>
                     <tr>
                         <th>39</th>
-                        <td>카페</td>
-                        <td>1500</td>
-                        <td><a href=http://naver.me/xzT4sj5p>카페 키아누</a></td>
-                        <td>쪽문 + 기숙사쪽문 + 조은문 + 솔로문</td>
-                        <td>당</td>
+                        <td>딸기 듬뿍 라떼</td>
+                        <td>4,200원</td>
+                        <td>220.0Kcal</td>
+                        <td>37.0g</td>
+                        <td>우유</td>
                     </tr>
                     <tr>
                         <th>32</th>
-                        <td>카페</td>
-                        <td>1900</td>
-                        <td><a href=http://naver.me/FSK0YNrK>워킹커피</a></td>
-                        <td>서문</td>
-                        <td>당</td>
+                        <td>흑임자 크림 라떼</td>
+                        <td>4,500원</td>
+                        <td>344.0Kcal</td>
+                        <td>29.0g</td>
+                        <td>우유, 대두, 밀</td>
                     </tr>
                     <tr>
                         <th>43</th>
-                        <td>카페</td>
-                        <td>2000</td>
-                        <td><a href=http://naver.me/57pGdb0m>하바나익스프레스 경대남문점</a></td>
-                        <td>쪽문 + 기숙사쪽문 + 조은문 + 솔로문</td>
-                        <td>당</td>
+                        <td>토피 넛 라떼</td>
+                        <td>4,200원</td>
+                        <td>222.0Kcal</td>
+                        <td>29.0g</td>
+                        <td>우유</td>
                     </tr>
                     <tr>
                         <th>55</th>
-                        <td>카페</td>
-                        <td>2500</td>
-                        <td><a href=http://naver.me/I5j2MMbv>커피해비치</a></td>
-                        <td>쪽문 + 기숙사쪽문 + 조은문 + 솔로문</td>
-                        <td>당</td>
+                        <td>녹차 라떼</td>
+                        <td>3,900원</td>
+                        <td>191.0Kcal</td>
+                        <td>25.0g</td>
+                        <td>우유, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
                     </tr>
                     <tr>
                         <th>62</th>
-                        <td>카페</td>
-                        <td>2500</td>
-                        <td><a href=http://naver.me/xxajmGpa>목로커피</a></td>
-                        <td>동문</td>
-                        <td>당</td>
+                        <td>12곡 라떼</td>
+                        <td>3,700원</td>
+                        <td>239.0Kcal</td>
+                        <td>22.0g</td>
+                        <td>우유, 대두, 밀</td>
                     </tr>
                     <tr>
                         <th>29</th>
-                        <td>카페</td>
-                        <td>4500</td>
-                        <td><a href=http://naver.me/FlY8H64C>Woodzy coffee</a></td>
-                        <td>서문</td>
-                        <td>당</td>
+                        <td>고구마 라떼</td>
+                        <td>4,200원</td>
+                        <td>344.0Kcal</td>
+                        <td>37.0g</td>
+                        <td>우유</td>
                     </tr>
                     <tr>
                         <th>60</th>
-                        <td>카페</td>
-                        <td>6500</td>
-                        <td><a href=http://naver.me/5RrHgBtx>다니상점</a></td>
-                        <td>동문</td>
-                        <td>당</td>
+                        <td>그래놀라 드링킹 요거트</td>
+                        <td>4,900원</td>
+                        <td>356.0Kcal</td>
+                        <td>39.0g</td>
+                        <td>우유</td>
                     </tr>
                     <tr>
-                        <th>57</th>
-                        <td>카페</td>
-                        <td>7900</td>
-                        <td><a href=http://naver.me/5RrHVjDu>카페 콘크리트</a></td>
-                        <td>쪽문 + 기숙사쪽문 + 조은문 + 솔로문</td>
-                        <td>당</td>
+                        <th>60</th>
+                        <td>딸기 드링킹 요거트</td>
+                        <td>4,900원</td>
+                        <td>329.0Kcal</td>
+                        <td>42.0g</td>
+                        <td>우유</td>
                     </tr>
                     <tr>
-                        <th>48</th>
-                        <td>카페</td>
-                        <td>10000</td>
-                        <td><a href=http://naver.me/FaVDdK2f>위치스케틀</a></td>
-                        <td>쪽문 + 기숙사쪽문 + 조은문 + 솔로문</td>
-                        <td>당</td>
+                        <th>60</th>
+                        <td>블루베리 드링킹 요거트</td>
+                        <td>4,900원</td>
+                        <td>346.0Kcal</td>
+                        <td>47.0g</td>
+                        <td>우유, 대두</td>
+                    </tr>
+                    <tr>
+                        <th>60</th>
+                        <td>망고 드링킹 요거트</td>
+                        <td>4,900원</td>
+                        <td>329.0Kcal</td>
+                        <td>43.0g</td>
+                        <td>우유</td>
+                    </tr>
+                    <tr>
+                        <th>29</th>
+                        <td>달고나 라떼</td>
+                        <td>3,700원</td>
+                        <td>286.0Kcal</td>
+                        <td>41.0g</td>
+                        <td>우유</td>
+                    </tr>
+                    <tr>
+                        <th>29</th>
+                        <td>흑당 라떼</td>
+                        <td>3,700원</td>
+                        <td>233.0Kcal</td>
+                        <td>38.0g</td>
+                        <td>우유, 아황산류</td>
+                    </tr>
+                    <tr>
+                        <th>29</th>
+                        <td>초콜릿</td>
+                        <td>3,900원</td>
+                        <td>318.0Kcal</td>
+                        <td>28.0g</td>
+                        <td>우유, 대두</td>
+                    </tr>
+                    <tr>
+                        <th>29</th>
+                        <td>민트 초콜릿</td>
+                        <td>4,200원</td>
+                        <td>397.0Kcal</td>
+                        <td>34.0g</td>
+                        <td>우유, 대두</td>
+                    </tr>
+                    <tr>
+                        <th>29</th>
+                        <td>버블 흑당 라떼</td>
+                        <td>4,700원</td>
+                        <td>308.0Kcal</td>
+                        <td>35.0g</td>
+                        <td>우유, 아황산류</td>
+                    </tr>
+                    <tr>
+                        <th>29</th>
+                        <td>버블 크림 밀크티</td>
+                        <td>4,700원</td>
+                        <td>319.0Kcal</td>
+                        <td>27.0g</td>
+                        <td>우유, 대두, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
                     </tr>
                 </tbody>
             </table>
         </details>
 
         <details>
-            <summary>패스트푸드</summary>
-            <table class="dataframe">
+            <summary>블렌디드</summary>
+            <table class="dataframe vertical">
+                <thead>
+                    <tr style="text-align: right;">
+                        <th></th>
+                        <th>메뉴</th>
+                        <th>가격</th>
+                        <th>칼로리</th>
+                        <th>당</th>
+                        <th>알러지</th>
+                    </tr>
+                </head>
+                <tbody>
+                    <tr>
+                        <th>21</th>
+                        <td>메뉴</td>
+                        <td>가격</td>
+                        <td>칼로리</td>
+                        <td>당</td>
+                        <td>알레르기 유발성분</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="dataframe vertical">
+                <thead>
+                    <tr style="text-align: right;">
+                        <th>메뉴</th>
+                        <th>가격</th>
+                        <th>칼로리</th>
+                        <th>당</th>
+                        <th>알러지</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>생딸기 연유 플랫치노</td>
+                        <td>5,700원</td>
+                        <td>397.0Kcal</td>
+                        <td>64.0g</td>
+                        <td>우유, 대두</td>
+                    </tr>
+                    <tr>
+                        <td>망고 플랫치노</td>
+                        <td>3,900원</td>
+                        <td>258.0Kcal</td>
+                        <td>65.0g</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td>꿀복숭아 플랫치노</td>
+                        <td>3,900원</td>
+                        <td>225.0Kcal</td>
+                        <td>49.0g</td>
+                        <td>복숭아</td>
+                    </tr>
+                    <tr>
+                        <td>플레인 요거트 플랫치노</td>
+                        <td>4,500원</td>
+                        <td>229.0Kcal</td>
+                        <td>32.0g</td>
+                        <td>우유</td>
+                    </tr>
+                    <tr>
+                        <td>블루베리 요거트 플랫치노</td>
+                        <td>4,700원</td>
+                        <td>297.0Kcal</td>
+                        <td>47.0g</td>
+                        <td>우유</td>
+                    </tr>
+                    <tr>
+                        <td>딸기 요거트 플랫치노</td>
+                        <td>4,700원</td>
+                        <td>313.0Kcal</td>
+                        <td>53.0g</td>
+                        <td>우유</td>
+                    </tr>
+                    <tr>
+                        <td>초콜릿 칩 플랫치노</td>
+                        <td>4,500원</td>
+                        <td>387.0Kcal</td>
+                        <td>42.0g</td>
+                        <td>우유, 대두</td>
+                    </tr>
+                    <tr>
+                        <td>민트 초콜릿 칩 플랫치노</td>
+                        <td>4,500원</td>
+                        <td>493.0Kcal</td>
+                        <td>52.0g</td>
+                        <td>우유, 대두, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
+                    </tr>
+                    <tr>
+                        <td>초코 쿠키 쉐이크</td>
+                        <td>4,900원</td>
+                        <td>449.0Kcal</td>
+                        <td>70.0g</td>
+                        <td>우유, 대두, 밀</td>
+                    </tr>
+                    <tr>
+                        <td>딸기 쉐이크</td>
+                        <td>5,200원</td>
+                        <td>454.0Kcal</td>
+                        <td>85.0g</td>
+                        <td>우유, 대두</td>
+                    </tr>
+                    <tr>
+                        <td>오리진 쉐이크</td>
+                        <td>4,700원</td>
+                        <td>355.0Kcal</td>
+                        <td>63.0g</td>
+                        <td>우유, 대두</td>
+                    </tr>
+                </tbody>
+            </table>
+        </details>
+
+        <details>
+            <summary>티</summary>
+            <table class="dataframe vertical">
+                <thead>
+                    <tr style="text-align: right;">
+                        <th></th>
+                        <th>메뉴</th>
+                        <th>가격</th>
+                        <th>칼로리</th>
+                        <th>당</th>
+                        <th>알러지</th>
+                    </tr>
+                </head>
+                <tbody>
+                    <tr>
+                        <th>21</th>
+                        <td>메뉴</td>
+                        <td>가격</td>
+                        <td>칼로리</td>
+                        <td>당</td>
+                        <td>알레르기 유발성분</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="dataframe vertical">
                 <thead>
                     <tr style="text-align: right;">
                         <th></th>
@@ -349,259 +771,144 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <th>40</th>
-                        <td>패스트푸드</td>
-                        <td>3800</td>
-                        <td><a href=http://naver.me/FWm2o9Yl>맘스터치 대구 대현점</a></td>
-                        <td>쪽문 + 기숙사쪽문 + 조은문 + 솔로문</td>
-                        <td>당</td>
+                        <td>홀리데이 레드뱅쇼</td>
+                        <td>4,900원</td>
+                        <td>201.0Kcal</td>
+                        <td>38.0g</td>
+                        <td>아황산류</td>
                     </tr>
                     <tr>
-                        <th>61</th>
-                        <td>패스트푸드</td>
-                        <td>5800</td>
-                        <td><a href=http://naver.me/FOswcBG4>다이나믹키친</a></td>
-                        <td>동문</td>
-                        <td>당</td>
+                        <td>윈터 화이트뱅쇼</td>
+                        <td>4,900원</td>
+                        <td>223.0Kcal</td>
+                        <td>42.0g</td>
+                        <td>X</td>
                     </tr>
                     <tr>
-                        <th>58</th>
-                        <td>패스트푸드</td>
-                        <td>14900</td>
-                        <td><a href=http://naver.me/xkjOEUk4>유로코피자 대구 경북대점</a></td>
-                        <td>쪽문 + 기숙사쪽문 + 조은문 + 솔로문</td>
-                        <td>당</td>
+                        <td>홍시 동동 수정과</td>
+                        <td>4,200원</td>
+                        <td>225.0Kcal</td>
+                        <td>45.0g</td>
+                        <td>아황산류</td>
                     </tr>
                     <tr>
-                        <th>27</th>
-                        <td>패스트푸드</td>
-                        <td>18000</td>
-                        <td><a href=http://naver.me/GMFTJ71x>이거 숯불양념치킨 산격점</a></td>
-                        <td>서문</td>
-                        <td>당</td>
+                        <td>배 모과차</td>
+                        <td>4,200원</td>
+                        <td>149.0Kcal</td>
+                        <td>29.0g</td>
+                        <td>X</td>
                     </tr>
                     <tr>
-                        <th>51</th>
-                        <td>패스트푸드</td>
-                        <td>18000</td>
-                        <td><a href=http://naver.me/GslvRkkK>미쳐버린파닭 경북대점</a></td>
-                        <td>쪽문 + 기숙사쪽문 + 조은문 + 솔로문</td>
-                        <td>당</td>
-                    </tr>
-                </tbody>
-            </table>
-        </details>
-
-        <details>
-            <summary>한식</summary>
-            <table class="dataframe">
-                <thead>
-                    <tr style="text-align: right;">
-                        <th></th>
-                        <th>메뉴</th>
-                        <th>가격</th>
-                        <th>칼로리</th>
-                        <th>당</th>
-                        <th>알러지</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>45</th>
-                        <td>한식</td>
-                        <td>4900</td>
-                        <td><a href=http://naver.me/FX3M7saH>행컵 경북대대현점</a></td>
-                        <td>쪽문 + 기숙사쪽문 + 조은문 + 솔로문</td>
-                        <td>당</td>
+                        <td>아망추(복숭아)</td>
+                        <td>3,900원</td>
+                        <td>218.0Kcal</td>
+                        <td>49.0g</td>
+                        <td>복숭아</td>
                     </tr>
                     <tr>
-                        <th>24</th>
-                        <td>한식</td>
-                        <td>5500</td>
-                        <td><a href=https://map.naver.com/v5/entry/place/38361017>찬누리식당</a></td>
-                        <td>텍문</td>
-                        <td>당</td>
+                        <td>제로슈가 아이스티(복숭아)</td>
+                        <td>2,900원</td>
+                        <td>9.0Kcal</td>
+                        <td>0.0g</td>
+                        <td>복숭아</td>
                     </tr>
                     <tr>
-                        <th>65</th>
-                        <td>한식</td>
-                        <td>6000</td>
-                        <td><a href=http://naver.me/IGAxNrsQ>아리랑순대국감자탕 동문점</a></td>
-                        <td>동문</td>
-                        <td>당</td>
+                        <td>복숭아 아이스티</td>
+                        <td>2,900원</td>
+                        <td>165.0Kcal</td>
+                        <td>39.0g</td>
+                        <td>복숭아</td>
                     </tr>
                     <tr>
-                        <th>53</th>
-                        <td>한식</td>
-                        <td>6000</td>
-                        <td><a href=http://naver.me/xc7ej3gJ>큰손 왕뼈다귀 해장국</a></td>
-                        <td>쪽문 + 기숙사쪽문 + 조은문 + 솔로문</td>
-                        <td>당</td>
+                        <td>레몬 아이스티</td>
+                        <td>2,900원</td>
+                        <td>158.0Kcal</td>
+                        <td>38.0g</td>
+                        <td>대두</td>
                     </tr>
                     <tr>
-                        <th>37</th>
-                        <td>한식</td>
-                        <td>6000</td>
-                        <td><a href=http://naver.me/GOxg82r2>친절한해숙씨</a></td>
-                        <td>서문</td>
-                        <td>당</td>
+                        <td>살얼음 식혜</td>
+                        <td>4,200원</td>
+                        <td>219.0Kcal</td>
+                        <td>50.0g</td>
+                        <td>X</td>
                     </tr>
                     <tr>
-                        <th>14</th>
-                        <td>한식</td>
-                        <td>6500</td>
-                        <td><a href=https://map.naver.com/v5/entry/place/37107669>고니식탁</a></td>
-                        <td>북문</td>
-                        <td>당</td>
+                        <td>석류 애플라임</td>
+                        <td>5,100원</td>
+                        <td>346.0Kcal</td>
+                        <td>74.0g</td>
+                        <td>X</td>
                     </tr>
                     <tr>
-                        <th>33</th>
-                        <td>한식</td>
-                        <td>6500</td>
-                        <td><a href=http://naver.me/GRvIsvNm>공간식당</a></td>
-                        <td>서문</td>
-                        <td>당</td>
+                        <td>유자 피나콜라다</td>
+                        <td>5,100원</td>
+                        <td>291.0Kcal</td>
+                        <td>67.0g</td>
+                        <td>X</td>
                     </tr>
                     <tr>
-                        <th>2</th>
-                        <td>한식</td>
-                        <td>6800</td>
-                        <td><a href=https://map.naver.com/v5/entry/place/13102698>신서울족발보쌈</a></td>
-                        <td>북문</td>
-                        <td>당</td>
+                        <td>자몽 네이블오렌지</td>
+                        <td>5,100원</td>
+                        <td>322.0Kcal</td>
+                        <td>73.0g</td>
+                        <td>X</td>
                     </tr>
                     <tr>
-                        <th>3</th>
-                        <td>한식</td>
-                        <td>6900</td>
-                        <td><a href=https://map.naver.com/v5/entry/place/1086456474>김치앤포크</a></td>
-                        <td>북문</td>
-                        <td>당</td>
+                        <td>밀크티</td>
+                        <td>4,200원</td>
+                        <td>167.0Kcal</td>
+                        <td>20.0g</td>
+                        <td>우유, nbsp, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
                     </tr>
                     <tr>
-                        <th>18</th>
-                        <td>한식</td>
-                        <td>7000</td>
-                        <td><a href=https://map.naver.com/v5/entry/place/10972665>유림식당</a></td>
-                        <td>북문</td>
-                        <td>당</td>
+                        <td>유자차</td>
+                        <td>4,200원</td>
+                        <td>187.0Kcal</td>
+                        <td>42.0g</td>
+                        <td>X</td>
                     </tr>
                     <tr>
-                        <th>49</th>
-                        <td>한식</td>
-                        <td>7000</td>
-                        <td><a href=http://naver.me/FY7kO9u0>성화식당</a></td>
-                        <td>쪽문 + 기숙사쪽문 + 조은문 + 솔로문</td>
-                        <td>당</td>
+                        <td>자몽치</td>
+                        <td>4,200원</td>
+                        <td>186.0Kcal</td>
+                        <td>42.0g</td>
+                        <td>X</td>
                     </tr>
                     <tr>
-                        <th>54</th>
-                        <td>한식</td>
-                        <td>7000</td>
-                        <td><a href=http://naver.me/5h7BXvie>모이다식탁 경북대점</a></td>
-                        <td>쪽문 + 기숙사쪽문 + 조은문 + 솔로문</td>
-                        <td>당</td>
+                        <td>그린루이보스</td>
+                        <td>3,200원</td>
+                        <td>8.0Kcal</td>
+                        <td>0.0g</td>
+                        <td>복숭아</td>
                     </tr>
                     <tr>
-                        <th>15</th>
-                        <td>한식</td>
-                        <td>8000</td>
-                        <td><a href=https://map.naver.com/v5/entry/place/1005147546>한끼갈비</a></td>
-                        <td>북문</td>
-                        <td>당</td>
-                    </tr>
-                    <tr>
-                        <th>41</th>
-                        <td>한식</td>
-                        <td>8000</td>
-                        <td><a href=http://naver.me/FX3M7jap>통큰할매순대국 대현점</a></td>
-                        <td>쪽문 + 기숙사쪽문 + 조은문 + 솔로문</td>
-                        <td>당</td>
-                    </tr>
-                    <tr>
-                        <th>31</th>
-                        <td>한식</td>
-                        <td>8500</td>
-                        <td><a href=http://naver.me/GWKRB7JM>맛있는집</a></td>
-                        <td>서문</td>
-                        <td>당</td>
-                    </tr>
-                    <tr>
-                        <th>23</th>
-                        <td>한식</td>
-                        <td>9500</td>
-                        <td><a href=https://map.naver.com/v5/entry/place/1184386500>소를품은연어</a></td>
-                        <td>북문</td>
-                        <td>당</td>
-                    </tr>
-                    <tr>
-                        <th>63</th>
-                        <td>한식</td>
-                        <td>14000</td>
-                        <td><a href=http://naver.me/5NFD4TEL>색계찜닭 본점</a></td>
-                        <td>동문</td>
-                        <td>당</td>
-                    </tr>
-                    <tr>
-                        <th>26</th>
-                        <td>한식</td>
-                        <td>17000</td>
-                        <td><a href=https://map.naver.com/v5/entry/place/38365736>양기생돼지양념구이</a></td>
-                        <td>텍문</td>
-                        <td>당</td>
-                    </tr>
-                    <tr>
-                        <th>19</th>
-                        <td>한식</td>
-                        <td>19000</td>
-                        <td><a href=https://map.naver.com/v5/entry/place/16137058>또바기 감자탕</a></td>
-                        <td>북문</td>
-                        <td>당</td>
-                    </tr>
-                    <tr>
-                        <th>38</th>
-                        <td>한식</td>
-                        <td>20000</td>
-                        <td><a href=http://naver.me/GYpBXuAa>고기한마당</a></td>
-                        <td>서문</td>
-                        <td>당</td>
-                    </tr>
-                    <tr>
-                        <th>36</th>
-                        <td>한식</td>
-                        <td>21000</td>
-                        <td><a href=http://naver.me/xJnRmLHU>하루족발보쌈 경대점</a></td>
-                        <td>서문</td>
-                        <td>당</td>
-                    </tr>
-                    <tr>
-                        <th>11</th>
-                        <td>한식</td>
-                        <td>22000</td>
-                        <td><a href=https://map.naver.com/v5/entry/place/36670950>봉대박찜닭</a></td>
-                        <td>북문</td>
-                        <td>당</td>
-                    </tr>
-                    <tr>
-                        <th>30</th>
-                        <td>한식</td>
-                        <td>26000</td>
-                        <td><a href=http://naver.me/GMFTJE6G>족발팩토리</a></td>
-                        <td>서문</td>
-                        <td>당</td>
-                    </tr>
-                    <tr>
-                        <th>28</th>
-                        <td>한식</td>
-                        <td>30000</td>
-                        <td><a href=http://naver.me/5qtYdiVr>언덕아래집식당</a></td>
-                        <td>응애</td>
-                        <td>당</td>
+                        <td>밀크티</td>
+                        <td>4,200원</td>
+                        <td>167.0Kcal</td>
+                        <td>20.0g</td>
+                        <td>우유, nbsp, 고카페인 함유(어린이, 임산부, 카페인 민감자 섭취 주의)</td>
                     </tr>
                 </tbody>
             </table>
         </details>
     </div>
-</body>
+    
 
+    <div class="review__writing">
+        <h1>Site Reviews</h1>
+        <details>
+            <summary>후기 작성하기</summary>
+            <textarea id="review-input" placeholder="어디야? 이디야! 에 대한 후기를 작성하세요..." rows="4" cols="100"></textarea>
+            <br>
+            <button id="submit-review-btn">리뷰 제출</button>
+        </details>
+    </div>
+
+    <div id = "review__record" class="review__writing">
+        <h2>리뷰 목록</h2>
+        <div id="review-list"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
 </html>
